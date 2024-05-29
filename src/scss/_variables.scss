@@ -26,16 +26,6 @@ $link-color: $blue-dark;
 //
 // Fonts
 //
-$font-sans-serif: (
-  '400': (
-    'woff': '',
-    'woff2': ''
-  ),
-  '700': (
-    'woff': '',
-    'woff2': ''
-  )
-); // NOTE: needs manual update to function. Add direct URLs to external woff/woff2 files.
 $font-family-sans-serif: "UCF-Sans-Serif-Alt", Helvetica, Arial, sans-serif;
 $font-family-base: $font-family-sans-serif;
 

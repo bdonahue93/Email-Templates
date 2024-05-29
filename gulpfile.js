@@ -3,7 +3,7 @@ const gulp = require('gulp');
 const merge = require('merge');
 const map = require('map-stream');
 const juice = require('juice');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const combineMq = require('gulp-group-css-media-queries');
 const htmlMin = require('gulp-htmlmin');
 const cheerio = require('gulp-cheerio');
@@ -57,7 +57,7 @@ function serverServe(done) {
 gulp.task('scss', () => {
   return gulp.src(`${config.srcDir}/scss/**/*.scss`)
     .pipe(sass({
-      outputStyle: "compact"
+      outputStyle: "compressed"
     })
       .on('error', sass.logError))
     .pipe(combineMq())
