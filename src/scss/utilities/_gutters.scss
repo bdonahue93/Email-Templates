@@ -1,0 +1,24 @@
+// scss-lint:disable all
+
+//
+// Top/bottom gutter convenience classes
+//
+
+@each $size, $lengths in $spacers {
+  $length-x: map-get($lengths, x);
+  $length-y: map-get($lengths, y);
+
+  .p-#{$size}  { padding:        $length-y $length-x; }
+  .pt-#{$size} { padding-top:    $length-y; }
+  .pr-#{$size} { padding-right:  $length-x; }
+  .pb-#{$size} { padding-bottom: $length-y; }
+  .pl-#{$size} { padding-left:   $length-x; }
+  .px-#{$size} {
+    padding-right: $length-x;
+    padding-left:  $length-x;
+  }
+  .py-#{$size} {
+    padding-top:    $length-y;
+    padding-bottom: $length-y;
+  }
+}

@@ -1,0 +1,15 @@
+# Node packages
+node_modules/*
+
+# Ignore automatically generated cruft
+*.log
+.sass-cache
+.DS_Store
+profile
+
+# Ignore config
+gulp-config.json
+
+# Ignore generated files
+dist/*
+src/css/*

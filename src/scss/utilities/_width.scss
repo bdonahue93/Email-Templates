@@ -1,0 +1,31 @@
+.w-50 {
+  width: 50%;
+}
+
+.w-50-desktop {
+  width: 50%;
+
+  @include mobile-mq() {
+    width: 100% !important;
+  }
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-75-desktop {
+  width: 75%;
+
+  @include mobile-mq() {
+    width: 100% !important;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-auto {
+  width: auto;
+}

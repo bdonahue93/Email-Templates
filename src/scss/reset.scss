@@ -1,0 +1,73 @@
+// scss-lint:disable all
+
+@import 'variables';
+@import 'mixins';
+
+
+//
+// Vendor
+//
+
+.ReadMsgBody {
+  background-color: #fff;
+  width: 100%;
+}
+
+.ExternalClass {
+  background-color: #fff;
+  width: 100%;
+
+  p,
+  span,
+  font,
+  td,
+  div {
+    line-height: 100%;
+  }
+}
+
+
+//
+// General
+//
+
+* { zoom: 1; }
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+th {
+  font-weight: normal;
+}
+
+a {
+  color: $link-color;
+}
+
+#MessageViewBody a,
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+img {
+  border: 0;
+  border-style: none;
+}

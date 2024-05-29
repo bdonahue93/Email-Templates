@@ -1,0 +1,12 @@
+// scss-lint:disable all
+
+//
+// Responsive images
+//
+
+.img-fluid {
+  @include mobile-mq() {
+    max-width: none !important;
+    width: 100% !important;
+  }
+}

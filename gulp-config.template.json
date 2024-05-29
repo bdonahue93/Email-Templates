@@ -1,0 +1,28 @@
+{
+  "sync": false,
+  "syncIndex": "template.html",
+  "juice": {
+    "preserveMediaQueries": true,
+    "preserveImportant": true,
+    "applyWidthAttributes": true,
+    "applyHeightAttributes": true,
+    "applyAttributesTableElements": true,
+    "webResources": {
+      "images": false
+    }
+  },
+  "htmlmin": {
+    "collapseInlineTagWhitespace": true,
+    "collapseWhitespace": true,
+    "conservativeCollapse": true,
+    "maxLineLength": 1000,
+    "preserveLineBreaks": true,
+    "removeComments": true
+  },
+  "declassify": {
+    "ignore": [],
+    "attrs": [
+        "class"
+    ]
+  }
+}

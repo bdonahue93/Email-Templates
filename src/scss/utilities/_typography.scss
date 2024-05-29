@@ -1,0 +1,105 @@
+// scss-lint:disable all
+
+
+//
+// Alignment
+//
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+//
+// Font size
+//
+.lead {
+  font-size: $lead-font-size;
+  letter-spacing: $lead-letter-spacing;
+  line-height: $lead-line-height;
+}
+
+.small {
+  font-size: $small;
+}
+
+.display-1 {
+  font-size: $font-size-display-1;
+  font-weight: bold;
+  line-height: $display-line-height;
+}
+
+.display-2 {
+  font-size: $font-size-display-2;
+  font-weight: bold;
+  line-height: $display-line-height;
+}
+
+.display-3 {
+  font-size: $font-size-display-3;
+  font-weight: bold;
+  line-height: $display-line-height;
+}
+
+.display-4 {
+  font-size: $font-size-display-4;
+  font-weight: bold;
+  line-height: $display-line-height;
+}
+
+.h1 {
+  font-size: $font-size-h1;
+  font-weight: bold;
+  line-height: $heading-line-height;
+}
+
+.h2 {
+  font-size: $font-size-h2;
+  font-weight: bold;
+  line-height: $heading-line-height;
+}
+
+.h3 {
+  font-size: $font-size-h3;
+  font-weight: bold;
+  line-height: $heading-line-height;
+}
+
+
+//
+// Font weight
+//
+.font-weight-bold {
+  font-weight: 700;
+}
+
+
+//
+// Font color
+//
+.text-primary {
+  color: $brand-primary;
+}
+
+.text-secondary {
+  color: $brand-secondary;
+}
+
+
+//
+// Other
+//
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-underline {
+  text-decoration: underline;
+}

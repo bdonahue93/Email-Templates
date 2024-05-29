@@ -1,0 +1,33 @@
+// scss-lint:disable all
+
+// Convenience mixin for defining media queries relative to $email-width.
+@mixin mobile-mq() {
+  @media (max-width: #{$email-width}) {
+    @content;
+  }
+}
+
+
+// Mixins for resetting styles on responsive tables and columns at the
+// $email-width breakpoint.
+
+@mixin mobile-unset-margin-x() {
+  @include mobile-mq() {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@mixin mobile-unset-padding-x() {
+  @include mobile-mq() {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@mixin mobile-unset-border-x() {
+  @include mobile-mq() {
+    border-left: 0 solid transparent !important;
+    border-right: 0 solid transparent !important;
+  }
+}

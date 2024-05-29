@@ -1,0 +1,47 @@
+// scss-lint:disable all
+
+//
+// Responsive show/hide classes
+//
+
+.hide-mobile {
+  @include mobile-mq() {
+    display: none;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    max-height: 0;
+    max-width: 0;
+    mso-hide: all; // hide elements in Outlook 2007-2013
+    overflow: hidden;
+    width: 0;
+  }
+}
+
+.show-mobile {
+  display: none;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  max-height: 0;
+  max-width: 0;
+  mso-hide: all; // hide elements in Outlook 2007-2013
+  overflow: hidden;
+  width: 0;
+
+  @include mobile-mq() {
+    display: block !important;
+    font-size: initial !important;
+    height: auto !important;
+    line-height: initial;
+    max-height: none !important;
+    max-width: none !important;
+    mso-hide: none !important;
+    overflow: visible !important;
+    width: auto !important;
+  }
+
+  &.img-fluid {
+    width: 100% !important;
+  }
+}

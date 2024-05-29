@@ -1,0 +1,45 @@
+//
+// Cross-client compatible horizontal dividers.
+//
+// Usage:
+// <table><tbody><tr><td class="hr"></td></tr></tbody></table>
+//
+
+.hr {
+  border-bottom-style: solid;
+  height: 0;
+  line-height: 0;
+  max-height: 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+.hr-1 {
+  border-bottom-width: 1px;
+}
+
+.hr-2 {
+  border-bottom-width: 3px;
+}
+
+.hr-3 {
+  border-bottom-width: 5px;
+}
+
+.hr-default {
+  border-color: #ccc;
+}
+
+.hr-primary {
+  border-color: $brand-primary;
+}
+
+.hr-secondary {
+  border-color: $brand-secondary;
+}
+
+.hr-inverse {
+  border-color: $white;
+}

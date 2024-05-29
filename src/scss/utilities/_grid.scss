@@ -1,0 +1,68 @@
+// scss-lint:disable all
+
+//
+// Container and column classes
+//
+
+// The email's wrapper table
+.container-body {
+  background-color: $body-bg;
+  min-width: 100%;
+  table-layout: fixed;
+  width: 100%;
+}
+
+// An outermost container table
+.container-outer {
+  @include mobile-mq() {
+    margin: 0 !important;
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  margin: auto;
+  min-width: $email-width;
+  width: $email-width;
+}
+
+// The firstmost inner tables, which should be padded at mobile sizes
+.container-inner {
+  @include mobile-unset-border-x();
+  @include mobile-mq() {
+    margin: 0 !important;
+    min-width: 0 !important;
+    padding-left: $gutter / 2;
+    padding-right: $gutter / 2;
+    width: 100% !important;
+  }
+
+  margin: auto;
+  min-width: $email-inner-width;
+  width: $email-inner-width;
+}
+
+// Generic class for a th or td that should collapse to 100% width at mobile sizes
+.mobile-column-collapse {
+  @include mobile-unset-border-x();
+  @include mobile-unset-margin-x();
+  @include mobile-unset-padding-x();
+  @include mobile-mq() {
+    clear: both;
+    display: block !important;
+    float: left;
+    overflow: hidden;
+    width: 100% !important;
+  }
+}
+
+// Left-hand column (1 of 2) with gutter
+.column-2-1 {
+  padding-right: $gutter / 2;
+  width: 50%;
+}
+
+// Right-hand column (2 of 2) with gutter
+.column-2-2 {
+  padding-left: $gutter / 2;
+  width: 50%;
+}
